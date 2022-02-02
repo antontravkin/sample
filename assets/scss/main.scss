@@ -1,17 +1,10 @@
 /* ===========Import============ */
 @import '_color';
+@import '_screens';
 @import '_reset';
 @import '_menu';
 @import '_footer';
 
-
-/* ===========Screens============ */
-$xxl: 1400px;
-$xl: 1200px;
-$l: 992px;
-$m: 768px;
-$s: 567px;
-$m: 425px;
 
 body{
     background-color: $bgmain;
@@ -33,5 +26,8 @@ a{
     max-width: $xl;
     padding: 0 15px;
     margin: 0 auto;
+}
+.main{
+    margin-top: 100px;
 }
 
