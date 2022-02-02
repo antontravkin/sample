@@ -1,0 +1,27 @@
+
+/* =========== Menu ============ */
+
+.menu{
+    
+    &__burger{
+        //display: none;
+        margin-top: 20px;
+        & span{
+            border-radius: 1px;
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: $color;
+            margin: 5px 0px;
+        }
+    }
+    &__items{
+        display: flex;
+    }
+    &__item{
+        padding: 1rem;
+    }
+    &__link{
+        color: $link;
+    }
+}
