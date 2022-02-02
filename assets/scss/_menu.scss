@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     z-index: 10;
-    background-color: #912105;
+    background-color: $bgMenu;
     &__container {
         padding: 0 30px;
         max-width: 1200px;
@@ -104,7 +104,7 @@ body._touch{
         transform: rotate(180deg);
     }
 }
-@media (min-width: 767px) {
+@media (min-width: $m) {
     .menu__list {
         display: flex;
         align-items: center;
@@ -171,8 +171,8 @@ body._touch{
     .menu__body {
         position: fixed;
         top: 0;
-        left: 100%;
-        width: 100%;
+        left: -100%;
+        width: calc(100% - 60px);
         height: 100%;
         background-color: rgba(0, 0, 0, 0.9);
         padding: 100px 30px 30px 30px;
@@ -190,7 +190,7 @@ body._touch{
             top: 0;
             left: 0;
             height: 70px;
-            background-color: #912105;
+            background-color: $bgMenu;
             z-index: 2;
         }
     }
