@@ -25,6 +25,9 @@
         z-index: 5;
         width: 40px;
         height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 }
@@ -34,17 +37,17 @@
     }
     &__list > li {
         position: relative;
-        margin-left: 20px;
+        //margin-left: 20px;
     }
     &__link {
-        color: #fff;
+        color: $link;
         font-size: 18px;
     }
     &__sub-list {
         position: absolute;
         top: 100%;
         right: 0;
-        background-color: #000;
+        background-color: $bgList;
         padding: 15px;
         min-width: 200px;
     }
@@ -55,7 +58,7 @@
         margin-bottom: 0px;
     }
     &__sub-link {
-        color: #fff;
+        color: $link;
     }
     &__sub-link:hover {
         text-decoration: underline;
@@ -90,7 +93,7 @@ body._touch{
         transition: transform 0.3s ease 0s;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 10px solid #fff;
+        border-top: 10px solid $link;
     }
 
     & .menu__list > li._active .menu__sub-list {
@@ -109,7 +112,7 @@ body._touch{
         display: flex;
         align-items: center;
         & > li {
-            padding: 10px 0;
+            padding: 10px 10px;
         }
     }
 
@@ -174,7 +177,7 @@ body._touch{
         left: -100%;
         width: calc(100% - 60px);
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: $bgMenuMob;
         padding: 100px 30px 30px 30px;
         transition: left 0.3s ease 0s;
         /* for scroll on menu */
@@ -206,7 +209,8 @@ body._touch{
         display: block;
     }
     .menu__link {
-        font-size: 24px;
+        font-size: 44px;
+        text-align: center;
     }
     .menu__sub-list {
         position: relative;

@@ -4,6 +4,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -78,6 +79,15 @@ table {
   z-index: 5;
   width: 40px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu__icon {
@@ -86,11 +96,10 @@ table {
 
 .menu__list > li {
   position: relative;
-  margin-left: 20px;
 }
 
 .menu__link {
-  color: #fff;
+  color: blue;
   font-size: 18px;
 }
 
@@ -98,7 +107,7 @@ table {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #000;
+  background-color: #9cb8a8;
   padding: 15px;
   min-width: 200px;
 }
@@ -112,7 +121,7 @@ table {
 }
 
 .menu__sub-link {
-  color: #fff;
+  color: blue;
 }
 
 .menu__sub-link:hover {
@@ -157,7 +166,7 @@ body._touch .menu__arrow {
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid #fff;
+  border-top: 10px solid blue;
 }
 
 body._touch .menu__list > li._active .menu__sub-list {
@@ -183,7 +192,7 @@ body._touch .menu__list > li._active .menu__arrow {
             align-items: center;
   }
   .menu__list > li {
-    padding: 10px 0;
+    padding: 10px 10px;
   }
   .menu__sub-list {
     -webkit-transform: translate(0, 10px);
@@ -249,7 +258,7 @@ body._touch .menu__list > li._active .menu__arrow {
     left: -100%;
     width: calc(100% - 60px);
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(173, 185, 184, 0.9);
     padding: 100px 30px 30px 30px;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
@@ -282,7 +291,8 @@ body._touch .menu__list > li._active .menu__arrow {
     display: block;
   }
   .menu__link {
-    font-size: 24px;
+    font-size: 44px;
+    text-align: center;
   }
   .menu__sub-list {
     position: relative;
@@ -306,9 +316,13 @@ footer {
   padding: 10px;
 }
 
+/* ===========Fonts============ */
 body {
+  font-family: 'Roboto', sans-serif;
   background-color: #e4e4e4;
   font-size: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 h1 {
@@ -330,10 +344,37 @@ a:hover {
   margin: 0 auto;
 }
 
+.btn {
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px 15px 30px;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: gray;
+}
+
 .main {
   margin-top: 100px;
 }
 
 .d-none {
   display: none;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content__title {
+  font-size: 24px;
+}
+
+.content__text {
+  margin-top: 10px;
+  line-height: 125%;
+  max-width: 500px;
 }
