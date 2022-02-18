@@ -19,7 +19,7 @@
         }
     }
     &__main {
-        padding: 0 15px;
+        padding: 0 30px;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -140,7 +140,7 @@ body._touch{
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $m) {
     .menu__icon {
         z-index: 5;
         display: block;

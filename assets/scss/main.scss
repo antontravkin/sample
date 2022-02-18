@@ -2,7 +2,9 @@
 @import '_var';
 @import '_reset';
 @import '_menu';
+@import '_content';
 @import '_footer';
+
 
 /* ===========Fonts============ */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
@@ -12,7 +14,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: $bgmain;
     font-size: 16px;
-    transition: all 0.3s ease 0.5s ;
+    transition: all 0.3s ease 0.5s;
 }
 h1{
     font-size: 44px;
@@ -29,26 +31,45 @@ a{
 }
 .container{
     max-width: $xl;
-    padding: 0 15px;
+    padding: 0 30px;
     margin: 0 auto;
+}
+.mr-1{
+    margin-right: 0.5rem;
+}
+.mr-2{
+    margin-right: 0.8rem;
+}
+.mr-3{
+    margin-right: 1rem;
+}
+.mr-4{
+    margin-right: 1.5rem;
+}
+.mr-5{
+    margin-right: 2rem;
 }
 .row{
     width: 100%;
     display: flex;
 }
-.col-12{
+.col-12, .col{
+    padding: 1rem;
     width: 100%;
     background-color: cadetblue;
 }
 .col-md-1{
+    padding: 1rem;
     width: 8.3333%;
     background-color: aquamarine;
 }
 .col-md-2{
+    padding: 1rem;
     width: 20%;
     background-color: burlywood;
 }
 .col-md-3{
+    padding: 1rem;
     width: 25%;
     background-color: plum;
 }
@@ -58,6 +79,7 @@ a{
     background-color: rgb(50, 163, 75);
 }
 .col-md-6{
+    padding: 1rem;
     width: 50%;
     background-color: rgb(184, 118, 73);
 }
@@ -109,4 +131,3 @@ a{
     }
 
 }
-

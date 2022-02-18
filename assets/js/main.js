@@ -66,7 +66,7 @@ if (menuLinks.length > 0) {
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             const gotoBlockValue =
                 gotoBlock.getBoundingClientRect().top +
-                pageYOffset -
+                scrollY -
                 document.querySelector(".header").offsetHeight;
             if (iconMenu.classList.contains("_active")) {
                 document.body.classList.remove("_lock");
