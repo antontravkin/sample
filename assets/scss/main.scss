@@ -1,5 +1,5 @@
 /* ===========Import============ */
-@import '_color';
+@import '_var';
 @import '_screens';
 @import '_reset';
 @import '_menu';
@@ -13,11 +13,15 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: $bgmain;
     font-size: 16px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease 0.5s ;
 
 }
 h1{
     font-size: 44px;
+}
+h2{
+    font-size: 30px;
+    margin: 10px 0;
 }
 a{
     color: $link;
@@ -31,6 +35,47 @@ a{
     padding: 0 15px;
     margin: 0 auto;
 }
+.row{
+    width: 100%;
+    display: flex;
+}
+.col-12{
+    width: 100%;
+    background-color: cadetblue;
+}
+.col-md-1{
+    width: 10%;
+    background-color: aquamarine;
+}
+.col-md-2{
+    width: 20%;
+    background-color: burlywood;
+}
+.col-md-3{
+    width: 25%;
+    background-color: plum;
+}
+.col-md-4{
+    width: 33.3333%;
+    background-color: rgb(50, 163, 75);
+}
+.col-md-6{
+    width: 50%;
+    background-color: rgb(184, 118, 73);
+}
+.column{
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+    width: 100%;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
+}
 .btn{
     background-color: $colorBtn;
     border: none;
@@ -38,12 +83,13 @@ a{
     padding: 15px 30px 15px 30px;
     font-size: 24px;
     margin-top: 10px;
+    transition: all 0.3s ease ;
     &:hover{
         background-color: $bgMenu;
     }
 }
 .main{
-    margin-top: 100px;
+    margin-top: 140px;
 }
 .d-none{
     display: none;
