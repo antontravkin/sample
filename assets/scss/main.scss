@@ -1,6 +1,5 @@
 /* ===========Import============ */
 @import '_var';
-@import '_screens';
 @import '_reset';
 @import '_menu';
 @import '_footer';
@@ -14,14 +13,12 @@ body{
     background-color: $bgmain;
     font-size: 16px;
     transition: all 0.3s ease 0.5s ;
-
 }
 h1{
     font-size: 44px;
 }
 h2{
     font-size: 30px;
-    margin: 10px 0;
 }
 a{
     color: $link;
@@ -44,7 +41,7 @@ a{
     background-color: cadetblue;
 }
 .col-md-1{
-    width: 10%;
+    width: 8.3333%;
     background-color: aquamarine;
 }
 .col-md-2{
@@ -56,6 +53,7 @@ a{
     background-color: plum;
 }
 .col-md-4{
+    padding: 1rem;
     width: 33.3333%;
     background-color: rgb(50, 163, 75);
 }
@@ -63,7 +61,12 @@ a{
     width: 50%;
     background-color: rgb(184, 118, 73);
 }
-.column{
+.col-md-9{
+    padding: 1rem;
+    width: 66.6666%;
+    background-color: rgb(116, 145, 122);
+}
+.wrap{
     flex-wrap: wrap;
 }
 .text-center{

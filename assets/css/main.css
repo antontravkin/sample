@@ -1,4 +1,5 @@
 /* ===========Import============ */
+/* ===========Color============ */
 /* ===========Screens============ */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -104,6 +105,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 0;
 }
 
 .menu__icon {
@@ -125,7 +127,6 @@ table {
   right: 0;
   background-color: #9cb8a8;
   padding: 15px;
-  min-width: 200px;
 }
 
 .menu__sub-list li {
@@ -138,6 +139,7 @@ table {
 
 .menu__sub-link {
   color: blue;
+  white-space: nowrap;
 }
 
 .menu__sub-link:hover {
@@ -292,8 +294,6 @@ body._touch .menu__list > li._active .menu__arrow {
     top: 0;
     left: 0;
     height: 70px;
-    background-color: gray;
-    z-index: 2;
   }
   .menu__list > li {
     -ms-flex-wrap: wrap;
@@ -332,7 +332,7 @@ footer {
 /* ===========Fonts============ */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #e4e4e4;
+  background-color: #ffffff;
   font-size: 16px;
   -webkit-transition: all 0.3s ease 0.5s;
   transition: all 0.3s ease 0.5s;
@@ -344,7 +344,6 @@ h1 {
 
 h2 {
   font-size: 30px;
-  margin: 10px 0;
 }
 
 a {
@@ -375,7 +374,7 @@ a:hover {
 }
 
 .col-md-1 {
-  width: 10%;
+  width: 8.3333%;
   background-color: aquamarine;
 }
 
@@ -390,6 +389,7 @@ a:hover {
 }
 
 .col-md-4 {
+  padding: 1rem;
   width: 33.3333%;
   background-color: #32a34b;
 }
@@ -399,7 +399,13 @@ a:hover {
   background-color: #b87649;
 }
 
-.column {
+.col-md-9 {
+  padding: 1rem;
+  width: 66.6666%;
+  background-color: #74917a;
+}
+
+.wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

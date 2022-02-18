@@ -38,6 +38,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 0;
     }
 
 }
@@ -60,7 +61,7 @@
         right: 0;
         background-color: $bgList;
         padding: 15px;
-        min-width: 200px;
+
     }
     &__sub-list li {
         margin-bottom: 10px;
@@ -70,6 +71,8 @@
     }
     &__sub-link {
         color: $link;
+        white-space: nowrap;
+        
     }
     &__sub-link:hover {
         text-decoration: underline;
@@ -204,8 +207,6 @@ body._touch{
             top: 0;
             left: 0;
             height: 70px;
-            background-color: $bgMenu;
-            z-index: 2;
         }
     }
 
