@@ -8,200 +8,206 @@
         <title>Sample Home</title>
     </head>
     <body>
-        <header class="header">
-            <!--top- menu-->
-            <div class="header__top">
+        <div class="wrapper">
+            <header class="header">
+                <!--top- menu-->
+                <div class="header__top">
+                    <div class="container">
+                        <div class="row header__top-info">
+                            <div class="adress">
+                                <a href="">
+                                    <i
+                                        class="fa fa-map-marker mr-1"
+                                        aria-hidden="true"
+                                    ></i>
+                                    г. Владимир
+                                </a>
+                            </div>
+                            <div class="phone">
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                    8(800)000-00-00</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- main menu -->
+                <div class="header__main">
+                    <a href="" class="header__logo">A</a>
+                    <div class="header__menu menu">
+                        <div class="menu__icon">
+                            <span></span>
+                        </div>
+                        <nav data-sub_menu_auto_close="true" class="menu__body">
+                            <ul class="menu__list">
+                                <li>
+                                    <a
+                                        data-goto=".page__section_1"
+                                        href=""
+                                        class="menu__link"
+                                        >Section 1</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        data-goto=".page__section_2"
+                                        href=""
+                                        class="menu__link"
+                                        >Section 2</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        data-goto=".page__section_3"
+                                        href=""
+                                        class="menu__link"
+                                        >Section 3</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="" class="menu__link">Page 1</a>
+                                    <span class="menu__arrow"></span>
+                                    <ul class="menu__sub-list">
+                                        <li>
+                                            <a href="" class="menu__sub-link"
+                                                >Section page 1</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="" class="menu__sub-link"
+                                                >Section page 2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="" class="menu__sub-link"
+                                                >Section page 3</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="menu__link"
+                                        >Page 2</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-----------------Content---------------->
+            <section class="main">
                 <div class="container">
-                    <div class="row header__top-info">
-                        <div class="adress">
-                            <a href="">
-                                <i
-                                    class="fa fa-map-marker mr-1"
-                                    aria-hidden="true"
-                                ></i>
-                                г. Владимир
-                            </a>
+                    <h1>Text H1</h1>
+                </div>
+            </section>
+            <section class="content">
+                <div class="container">
+                    <div class="content__title">
+                        <h2>Hello</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quis minus ut architecto deserunt, fugit
+                            repellat ab blanditiis tempore laborum maiores error
+                            nam nihil natus beatae dolorum harum. Sit, eaque
+                            sunt.
                         </div>
-                        <div class="phone">
-                            <a href="#"
-                                ><i class="fa fa-phone" aria-hidden="true"></i>
-                                8(800)000-00-00</a
-                            >
-                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- main menu -->
-            <div class="header__main">
-                <a href="" class="header__logo">A</a>
-                <div class="header__menu menu">
-                    <div class="menu__icon">
-                        <span></span>
-                    </div>
-                    <nav data-sub_menu_auto_close="true" class="menu__body">
-                        <ul class="menu__list">
-                            <li>
-                                <a
-                                    data-goto=".page__section_1"
-                                    href=""
-                                    class="menu__link"
-                                    >Section 1</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    data-goto=".page__section_2"
-                                    href=""
-                                    class="menu__link"
-                                    >Section 2</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    data-goto=".page__section_3"
-                                    href=""
-                                    class="menu__link"
-                                    >Section 3</a
-                                >
-                            </li>
-                            <li>
-                                <a href="" class="menu__link">Page 1</a>
-                                <span class="menu__arrow"></span>
-                                <ul class="menu__sub-list">
-                                    <li>
-                                        <a href="" class="menu__sub-link"
-                                            >Section page 1</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="" class="menu__sub-link"
-                                            >Section page 2</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="" class="menu__sub-link"
-                                            >Section page 3</a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="page.html" class="menu__link"
-                                    >Page 2</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <!-----------------Content---------------->
-        <section class="main">
-            <div class="container">
-                <h1>Text H1</h1>
-            </div>
-        </section>
-        <section class="content">
-            <div class="container">
-                <div class="content__title">
-                    <h2>Hello</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Quis minus ut architecto deserunt, fugit repellat
-                        ab blanditiis tempore laborum maiores error nam nihil
-                        natus beatae dolorum harum. Sit, eaque sunt.
-                    </div>
-                </div>
 
-                <div class="content__link">
-                    <button class="btn">Next</button>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2 class="text-center">1 колонка</h2>
-                <div class="row">
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Voluptatum ipsam delectus nihil recusandae hic
-                            molestiae sapiente nemo aliquid quasi laudantium,
-                            quos quas corporis error doloribus nulla porro aut
-                            harum eum.
-                        </p>
+                    <div class="content__link">
+                        <button class="btn">Next</button>
                     </div>
                 </div>
-                <h2 class="text-center">12 колонка</h2>
-                <div class="row">
-                    <div class="col-md-1">md-1</div>
-                    <div class="col-md-1">md-1</div>
-                    <div class="col-md-1">md-1</div>
-                    <div class="col-md-1">md-1</div>
-                    <div class="col-md-1">md-1</div>
-                    <div class="col-md-1">md-1</div>
-                    <div class="col-md-1">md-1</div>
-                    <div class="col-md-1">md-1</div>
-                    <div class="col-md-1">md-1</div>
-                    <div class="col-md-1">md-1</div>
-                    <div class="col-md-1">md-1</div>
-                    <div class="col-md-1">md-1</div>
-                </div>
-                <h2 class="text-center">6 колонок</h2>
-                <div class="row">
-                    <div class="col-md-2">md-2</div>
-                    <div class="col-md-2">md-2</div>
-                    <div class="col-md-2">md-2</div>
-                    <div class="col-md-2">md-2</div>
-                    <div class="col-md-2">md-2</div>
-                    <div class="col-md-2">md-2</div>
-                </div>
-                <h2 class="text-center">4 колонок</h2>
-                <div class="row">
-                    <div class="col-md-3">md-3</div>
-                    <div class="col-md-3">md-3</div>
-                    <div class="col-md-3">md-3</div>
-                    <div class="col-md-3">md-3</div>
-                </div>
-                <h2 class="text-center">3 колонок</h2>
-                <div class="row">
-                    <div class="col-md-4">md-4</div>
-                    <div class="col-md-4">md-4</div>
-                    <div class="col-md-4">md-4</div>
-                </div>
-                <h2 class="text-center">2 колонок</h2>
-                <div class="row">
-                    <div class="col-md-6">md-6</div>
-                    <div class="col-md-6">md-6</div>
-                </div>
-            </div>
-        </section>
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3>MENU</h3>
-                        <p>content</p>
+            </section>
+            <section>
+                <div class="container">
+                    <h2 class="text-center">1 колонка</h2>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Voluptatum ipsam delectus
+                                nihil recusandae hic molestiae sapiente nemo
+                                aliquid quasi laudantium, quos quas corporis
+                                error doloribus nulla porro aut harum eum.
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-md-9 text-center">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Sed quas culpa magnam consequuntur voluptatum
-                            harum, suscipit quos fugiat, maiores modi
-                            repellendus, in adipisci sequi earum. Quibusdam qui
-                            id hic facere.
-                        </p>
+                    <h2 class="text-center">12 колонка</h2>
+                    <div class="row">
+                        <div class="col-md-1">md-1</div>
+                        <div class="col-md-1">md-1</div>
+                        <div class="col-md-1">md-1</div>
+                        <div class="col-md-1">md-1</div>
+                        <div class="col-md-1">md-1</div>
+                        <div class="col-md-1">md-1</div>
+                        <div class="col-md-1">md-1</div>
+                        <div class="col-md-1">md-1</div>
+                        <div class="col-md-1">md-1</div>
+                        <div class="col-md-1">md-1</div>
+                        <div class="col-md-1">md-1</div>
+                        <div class="col-md-1">md-1</div>
+                    </div>
+                    <h2 class="text-center">6 колонок</h2>
+                    <div class="row">
+                        <div class="col-md-2">md-2</div>
+                        <div class="col-md-2">md-2</div>
+                        <div class="col-md-2">md-2</div>
+                        <div class="col-md-2">md-2</div>
+                        <div class="col-md-2">md-2</div>
+                        <div class="col-md-2">md-2</div>
+                    </div>
+                    <h2 class="text-center">4 колонок</h2>
+                    <div class="row">
+                        <div class="col-md-3">md-3</div>
+                        <div class="col-md-3">md-3</div>
+                        <div class="col-md-3">md-3</div>
+                        <div class="col-md-3">md-3</div>
+                    </div>
+                    <h2 class="text-center">3 колонок</h2>
+                    <div class="row">
+                        <div class="col-md-4">md-4</div>
+                        <div class="col-md-4">md-4</div>
+                        <div class="col-md-4">md-4</div>
+                    </div>
+                    <h2 class="text-center">2 колонок</h2>
+                    <div class="row">
+                        <div class="col-md-6">md-6</div>
+                        <div class="col-md-6">md-6</div>
                     </div>
                 </div>
+            </section>
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>MENU</h3>
+                            <p>content</p>
+                        </div>
+                        <div class="col-md-9 text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sed quas culpa magnam
+                                consequuntur voluptatum harum, suscipit quos
+                                fugiat, maiores modi repellendus, in adipisci
+                                sequi earum. Quibusdam qui id hic facere.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <footer class="footer">
+                <div class="container">
+                    <p>© Сorporation, 2022</p>
+                </div>
+            </footer>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <p>© Сorporation, 2022</p>
-            </div>
-        </footer>
         <script src="https://use.fontawesome.com/8c8ec19a57.js"></script>
         <script src="assets/js/main.js"></script>
     </body>

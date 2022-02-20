@@ -29,6 +29,10 @@ a{
         color: $linkHov;
     }
 }
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+}
 .container{
     max-width: $xl;
     padding: 0 30px;
